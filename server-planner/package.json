@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "dev": "tsc -w",
+    "start": "tsc && node ./dist",
+    "build": "tsc"
+  },
   "devDependencies": {
     "typescript": "^4.2.3"
   }
