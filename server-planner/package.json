@@ -1,10 +1,18 @@
 {
+  "name": "woven-finance-assessment",
+  "author": {
+    "name": "Emmanuel Popoola",
+    "email": "olaayo10@gmail.com"
+  },
+  "license": "ISC",
   "scripts": {
-    "dev": "tsc -w",
+    "dev": "tsc-watch --onSuccess \"node ./dist/index.js\"",
     "start": "tsc && node ./dist",
     "build": "tsc"
   },
   "devDependencies": {
+    "@types/node": "^14.14.33",
+    "tsc-watch": "^4.2.9",
     "typescript": "^4.2.3"
   }
 }
