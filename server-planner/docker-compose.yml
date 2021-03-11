@@ -1,0 +1,14 @@
+version: "3"
+networks:
+  default:
+services:
+  server-planner:
+    networks:
+      - default
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      PORT: 3001
+    ports:
+      - 3001:3001

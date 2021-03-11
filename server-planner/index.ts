@@ -5,7 +5,8 @@ import { Server } from "./interfaces/server";
 
 // const serverType: Server = { CPU: 2, RAM: 32, HDD: 100 };
 
-const port = 3001;
+const port = process.env.PORT || 3000;
+
 const defaults: {
   virtualMachines: Server[];
   serverType: Server;
@@ -65,7 +66,7 @@ const server = http.createServer((req, res) => {
         );
 
       default:
-        res.end("Invalid method");
+        res.end();
     }
   });
 });
