@@ -55,8 +55,15 @@ node linked-list.js
 
 ```shell
 cd server-planner
+```
+```shell
 npm install
 npm run start
+```
+
+If you're using Docker,
+```shell
+docker-compose up --build
 ```
 
 The server will run on port 3001. To test, send a POST request to http://localhost:3001.
