@@ -60,7 +60,7 @@ const server = http.createServer((req, res) => {
         const serversRequired = calculate(serverType, virtualMachines);
 
         res.writeHead(200, { "Content-Type": "application/json" });
-        res.end(
+        res.write(
           JSON.stringify({ serversRequired, virtualMachines, serverType })
         );
 

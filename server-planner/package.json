@@ -7,7 +7,7 @@
   "license": "ISC",
   "scripts": {
     "dev": "tsc-watch --onSuccess \"node ./dist/index.js\"",
-    "start": "tsc && node ./dist",
+    "start": "npm run build && node ./dist",
     "build": "tsc"
   },
   "devDependencies": {
