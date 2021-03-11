@@ -12,9 +12,9 @@
 
 const words = ["go", "home", "and", "eat", "food"];
 
-function hasWord(word) {
+export function hasWord(word, words) {
   return words.includes(word);
 }
 
-console.log(hasWord("home")); // expect true
-console.log(hasWord("ho")); // expect false
+console.log(hasWord("home", words)); // expect true
+console.log(hasWord("ho", words)); // expect false

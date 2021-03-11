@@ -3,7 +3,7 @@
  * Your function should receive a value and returns the preceding value in the linked list.
  */
 
-class LinkedList {
+export class LinkedList {
   constructor() {
     this.head = null;
   }
